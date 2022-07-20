@@ -8,9 +8,9 @@
 // TODO: Fix .container-fluid for mobile in paragon
 .container-fluid {
   @media (max-width: -1 + map-get($grid-breakpoints, 'sm')) {
-    padding-left: $grid-gutter-width/2;
-    padding-right: $grid-gutter-width/2;
-  }
+    padding-left: calc($grid-gutter-width / 2);
+    padding-right: calc($grid-gutter-width / 2);
+  } 
 }
 
 #root {
@@ -357,6 +357,10 @@
   .modal-content {
     height: 100%;
   }
+}
+
+.new-color.bg-primary.text-white{
+background-color:  #006daa !important;
 }
 
 // Import component-specific sass files

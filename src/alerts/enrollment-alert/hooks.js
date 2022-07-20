@@ -10,7 +10,8 @@ import { useModel } from '../../generic/model-store';
 
 import { postCourseEnrollment } from './data/api';
 
-const EnrollmentAlert = React.lazy(() => import('./EnrollmentAlert'));
+// eslint-disable-next-line no-use-before-define
+const EnrollmentAlert = React.lazy(() => import('./EnrollmentAlert')); // eslint-disable-line no-use-before-define
 
 export function useEnrollmentAlert(courseId) {
   const { authenticatedUser } = useContext(AppContext);
