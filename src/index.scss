@@ -26,7 +26,15 @@
     background-color: #006daa !important;
     border-color: #006daa !important;
   }
-  
+
+  [dir] .btn-outline-primary {
+    border-color: #006daa;
+}
+
+.btn-outline-primary {
+  color: #006daa;
+}
+
 #root {
   display: flex;
   flex-direction: column;
