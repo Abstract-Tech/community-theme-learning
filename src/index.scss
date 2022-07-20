@@ -17,6 +17,11 @@
   background-color:  #006daa !important;
   }
 
+  [dir] .btn-primary, [dir] .modal .modal-footer button, [dir] .streak-modal .modal-footer button::after{
+    background-color: #006daa !important;
+    border-color: #006daa !important;
+  }
+
 #root {
   display: flex;
   flex-direction: column;
