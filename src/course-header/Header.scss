@@ -31,6 +31,9 @@ header.course-header
   &::after {
     display: none;
   }
+  &:hover{
+    background-color: transparent;
+  }
 
   svg {
     margin-right: 10px;
