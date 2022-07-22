@@ -99,7 +99,9 @@ const Footer = () => {
           <img alt="opencraft-logo" src={openCraftLogo} />
           </div>
           <span class="Theme-licensed-under">
-            Theme licensed under theAGPLv3 License.Copyright 2022 by OpenCraft &
+            Theme licensed under the AGPLv3 License.
+            <br/>
+            Copyright {new Date().getFullYear()} by OpenCraft &
             Abstract Technology
           </span>
         </div>
@@ -107,7 +109,7 @@ const Footer = () => {
           <img alt="openedx-logo" src={openEdxLogo} />
           <span class="edX-Open-edX-and-th">
             edX, Open edX and their respective logos are registered trademarks
-            of edX Inc. Free online courses atedX.org
+            of edX Inc. Free online courses at <a href="https://www.edx.org">edX.org</a>
           </span>
         </div>
       </div>
