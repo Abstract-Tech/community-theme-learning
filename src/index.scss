@@ -5,6 +5,8 @@
 
 @import "~@edx/frontend-component-footer/dist/footer";
 
+@import url("http://fonts.cdnfonts.com/css/work-sans");
+
 // TODO: Fix .container-fluid for mobile in paragon
 .container-fluid {
   @media (max-width: -1 + map-get($grid-breakpoints, 'sm')) {
@@ -44,6 +46,7 @@ margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Work Sans", sans-serif;
 
   main {
     flex-grow: 1;
