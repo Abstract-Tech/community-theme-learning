@@ -8,8 +8,13 @@ a.login-button.btn.btn-primary {
   background-color: transparent !important;
   color: #121212;
   border: none !important;
+  &:focus,
+  &:active {
+    border: none !important;
+    color: #121212;
+  }
 }
 
-a.courses-link{
-    color: #121212;
+a.courses-link {
+  color: #121212;
 }
