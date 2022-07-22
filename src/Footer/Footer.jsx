@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.svg";
+import openCraftLogo from "../assets/opencraft-logo.png";
 import openEdxLogo from "../assets/open-edx-logo-tag.png";
 import "./Footer.scss";
 
@@ -94,6 +95,7 @@ const Footer = () => {
       <div className="logos-section">
         <div>
           <img alt="abstract-logo" src={logo} />
+          <img alt="opencraft-logo" src={openCraftLogo} />
           <span class="Theme-licensed-under">
             Theme licensed under theAGPLv3 License.Copyright 2022 by OpenCraft &
             Abstract Technology
