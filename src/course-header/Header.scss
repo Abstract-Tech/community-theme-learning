@@ -1,13 +1,13 @@
-button.register-button {
+a.register-button {
   border-radius: 4px;
   background-color: #121212;
   color: #fff;
 }
 
-button.login-button {
-  background-color: transparent;
+a.login-button {
+  background-color: transparent !important;
   color: #121212;
-  border: none;
+  border: none !important;
 }
 
 a.courses-link{

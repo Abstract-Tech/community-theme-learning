@@ -27,6 +27,7 @@ const messages = defineMessages({
     description: 'Text in a button, prompting the user to log in.',
   },
   Explore:{
+    id: 'learning.Explore courses', 
     defaultMessage: 'Explore',
     description: 'Text in a button, prompting the user to the courses page.',
   }
