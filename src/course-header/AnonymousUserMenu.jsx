@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 import genericMessages from '../generic/messages';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
   
 function AnonymousUserMenu({ intl }) {
   return (
