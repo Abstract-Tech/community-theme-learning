@@ -22,3 +22,11 @@ a.courses-link {
 img.eye-icon{
   margin-right: 15px;
 }
+
+header.course-header .user-dropdown .btn{
+  border: none;
+  svg{
+    margin-right: 10px;
+    color: green;
+  }
+}

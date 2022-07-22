@@ -41,6 +41,16 @@ const messages = defineMessages({
     defaultMessage: 'Sign Out',
     description: 'The label for the user menu Sign Out action.',
   },
+  Explore:{
+    id: 'learning.Explore courses', 
+    defaultMessage: 'Explore',
+    description: 'Text in a button, prompting the user to the courses page.',
+  },
+  mycourses:{
+    id: 'learning.mycourses courses', 
+    defaultMessage: 'mycourses',
+    description: 'Text in a button, prompting the user to the dashboard page.',
+  }
 });
 
 export default messages;

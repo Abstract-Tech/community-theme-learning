@@ -32,9 +32,14 @@ function AuthenticatedUserDropdown({
   }
   return (
     <>
-      <a className="text-gray-700 mr-3" href={`${getConfig().SUPPORT_URL}`}>
-        {intl.formatMessage(messages.help)}
+      <a className="courses-link" href={`${getConfig().LMS_BASE_URL}/courses`}>
+        {intl.formatMessage(messages.Explore)}
       </a>
+      
+      <a className="courses-link" href={`${getConfig().LMS_BASE_URL}/dashboard`}>
+        {intl.formatMessage(messages.mycourses)}
+      </a>
+
       <Dropdown className="user-dropdown">
         <Dropdown.Toggle variant="outline-primary">
           <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
