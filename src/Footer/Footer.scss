@@ -30,15 +30,17 @@
 div.footer-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .privacy-links > ul {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
   li {
     padding-right: 15px;
-    margin: 6px 2px 66px 1px;
+    margin: 6px 2px 0 1px;
     margin-left: 15px;
-
     list-style-type: none;
     font-size: 16px;
     font-weight: normal;
@@ -65,6 +67,13 @@ div.footer-container {
   img {
     width: 200px;
     padding-left: 30px;
+    &:nth-child(2){
+      width: 185px;
+      padding-left: 0px;  
+    }
+    @media screen and (max-width:600px){
+      margin-bottom: 15px;
+    }
   }
   div {
     display: flex;
@@ -84,6 +93,7 @@ div.footer-container {
   letter-spacing: normal;
   color: #121212;
   width: 300px;
+  margin: 0 auto;
 }
 
 .Name-All-rights {
