@@ -4,7 +4,6 @@ import { getConfig } from '@edx/frontend-platform';
 import { getLoginRedirectUrl } from '@edx/frontend-platform/auth';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { Button } from '@edx/paragon';
-import { getConfig } from '@edx/frontend-platform';
 
 import genericMessages from '../generic/messages';
   
