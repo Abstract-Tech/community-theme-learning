@@ -69,13 +69,13 @@ function Header({
           <span className="d-block small m-0">{courseOrg} {courseNumber}</span>
           <span className="d-block m-0 font-weight-bold course-title">{courseTitle}</span>
         </div>
-        {!authenticatedUser && (
+        {authenticatedUser && (
           <AuthenticatedUserDropdown
             enterpriseLearnerPortalLink={enterpriseLearnerPortalLink}
             username={authenticatedUser.username}
           />
         )}
-        {authenticatedUser && (
+        {!authenticatedUser && (
           <AnonymousUserMenu />
         )}
       </div>
