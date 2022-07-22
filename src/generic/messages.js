@@ -18,14 +18,18 @@ const messages = defineMessages({
   },
   signInLowercase: {
     id: 'learning.logistration.login', // ID left for historical purposes
-    defaultMessage: 'sign in',
+    defaultMessage: 'Login',
     description: 'Text in a link, prompting the user to log in.  Used in "learning.logistration.alert"',
   },
   signInSentenceCase: {
     id: 'general.signIn.sentenceCase',
-    defaultMessage: 'Sign in',
+    defaultMessage: 'Login',
     description: 'Text in a button, prompting the user to log in.',
   },
+  Explore:{
+    defaultMessage: 'Explore',
+    description: 'Text in a button, prompting the user to the courses page.',
+  }
 });
 
 export default messages;

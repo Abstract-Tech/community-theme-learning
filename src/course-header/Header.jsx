@@ -9,6 +9,8 @@ import AnonymousUserMenu from './AnonymousUserMenu';
 import AuthenticatedUserDropdown from './AuthenticatedUserDropdown';
 import messages from './messages';
 
+import "./Header.scss";
+
 function LinkedLogo({
   href,
   src,
