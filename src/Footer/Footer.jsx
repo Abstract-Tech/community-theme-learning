@@ -93,7 +93,7 @@ const Footer = () => {
 
       <div className="Line"></div>
       <div className="logos-section">
-        <div>
+        <div className="left-section">
         <div className="partnership-logos">
           <img alt="abstract-logo" src={logo} />
           <img alt="opencraft-logo" src={openCraftLogo} />
@@ -103,7 +103,7 @@ const Footer = () => {
             Abstract Technology
           </span>
         </div>
-        <div>
+        <div className="right-section">
           <img alt="openedx-logo" src={openEdxLogo} />
           <span class="edX-Open-edX-and-th">
             edX, Open edX and their respective logos are registered trademarks
