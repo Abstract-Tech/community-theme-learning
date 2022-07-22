@@ -48,7 +48,7 @@ const messages = defineMessages({
   },
   mycourses:{
     id: 'learning.mycourses courses', 
-    defaultMessage: 'mycourses',
+    defaultMessage: 'My courses',
     description: 'Text in a button, prompting the user to the dashboard page.',
   }
 });

@@ -19,14 +19,20 @@ a.courses-link {
   color: #121212;
 }
 
-img.eye-icon{
+img.eye-icon {
   margin-right: 15px;
 }
 
-header.course-header .user-dropdown .btn{
+header.course-header
+  .user-dropdown
+  button.dropdown-toggle.btn.btn-outline-primary {
   border: none;
-  svg{
+  &::after {
+    display: none;
+  }
+
+  svg {
     margin-right: 10px;
-    color: green;
+    color: #25a78e;
   }
 }
