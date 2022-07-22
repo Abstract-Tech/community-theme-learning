@@ -131,3 +131,25 @@ div.footer-container {
   color: #121212;
   font-family: "Work Sans", sans-serif;
 }
+
+
+header.site-header-desktop {
+  border: none;
+  position: absolute;
+  box-shadow: none;
+  width: 100%;
+  background: none;
+}
+
+nav.nav.secondary-menu-container.align-items-center.ml-auto {
+  .btn {
+    font-size: 14px;
+    color: #121212;
+  }
+  .btn-outline-primary {
+    border-radius: 4px;
+    background-color: #121212;
+    color: #fff;
+    font-size: 14px;
+  }
+}
