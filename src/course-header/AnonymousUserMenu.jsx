@@ -13,7 +13,7 @@ import EyeIcon from "../assets/EyeIcon.svg";
 function AnonymousUserMenu({ intl }) {
   return (
     <div>
-      <img src={EyeIcon} alt="eye-icon" />
+      <img className="eye-icon" src={EyeIcon} alt="eye-icon" />
       <a className="courses-link" href={`${getConfig().LMS_BASE_URL}/courses`}>
         {intl.formatMessage(genericMessages.Explore)}
       </a>
