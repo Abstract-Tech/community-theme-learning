@@ -98,7 +98,7 @@ div.footer-container {
       margin-bottom: 15px;
     }
   }
-  div {
+  div.left-section, div.right-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
