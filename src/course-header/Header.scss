@@ -28,11 +28,16 @@ header.course-header
   .user-dropdown
   button.dropdown-toggle.btn.btn-outline-primary {
   border: none;
+  height: auto;
   &::after {
     display: none;
   }
-  &:hover{
+  &:hover,
+  &:focus::before,
+  &:focus,
+  &:active {
     background-color: transparent;
+    border: none;
   }
 
   svg {
