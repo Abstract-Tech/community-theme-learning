@@ -94,8 +94,10 @@ const Footer = () => {
       <div className="Line"></div>
       <div className="logos-section">
         <div>
+        <div className="partnership-logos">
           <img alt="abstract-logo" src={logo} />
           <img alt="opencraft-logo" src={openCraftLogo} />
+          </div>
           <span class="Theme-licensed-under">
             Theme licensed under theAGPLv3 License.Copyright 2022 by OpenCraft &
             Abstract Technology

@@ -83,12 +83,16 @@ div.footer-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  .partnership-logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
   img {
     width: 200px;
     padding-left: 30px;
     &:nth-child(2) {
-      width: 185px;
-      padding-left: 0px;
+      width: 125px;
+      padding-left: 15px;
     }
     @media screen and (max-width: 600px) {
       margin-bottom: 15px;
