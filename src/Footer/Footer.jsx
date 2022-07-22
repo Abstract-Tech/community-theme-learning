@@ -24,7 +24,7 @@ const Footer = () => {
               <span className="sr-only">Twitter</span>
               <svg
                 className="h-6 w-6"
-                fill="currentColor"
+                fill="#000"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
@@ -35,7 +35,7 @@ const Footer = () => {
               <span className="sr-only">GitHub</span>
               <svg
                 className="h-6 w-6"
-                fill="currentColor"
+                fill="#000"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
@@ -51,11 +51,11 @@ const Footer = () => {
               <svg
                 viewBox="0 50 512 512"
                 className="h-6 w-6"
-                fill="currentColor"
+                fill="#000"
                 aria-hidden="true"
               >
                 <path
-                  fill="#9ca3af"
+                  fill="#000"
                   d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"
                 ></path>
               </svg>
@@ -65,13 +65,13 @@ const Footer = () => {
               <svg
                 viewBox="0 0 1043.63 592.71"
                 className="h-6 w-6"
-                fill="currentColor"
+                fill="#000"
                 aria-hidden="true"
               >
                 <g data-name="Layer 2">
                   <g data-name="Layer 1">
                     <path
-                      fill="#9ca3af"
+                      fill="#000"
                       d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.56 296.36c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94"
                     ></path>
                   </g>
@@ -81,10 +81,10 @@ const Footer = () => {
           </div>
           <div className="privacy-links">
             <ul class="Name-All-rights">
-              <li>Name</li>
-              <li>All rights reserved </li>
-              <li>Privacy</li>
-              <li>Terms</li>
+              <li><a href="/name">© Name</a></li>
+              <li><a href="/all-rights">All rights reserved</a></li>
+              <li><a href="/privacy">Privacy</a></li>
+              <li><a href="/terms">Terms</a></li>
             </ul>
           </div>
         </div>
