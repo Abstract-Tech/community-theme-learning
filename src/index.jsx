@@ -11,7 +11,7 @@ import ReactDOM from 'react-dom';
 import { Switch } from 'react-router-dom';
 
 // import Footer, { messages as footerMessages } from '@edx/frontend-component-footer';
-import Footer from "./Footer/Footer";
+import Footer from './Footer/Footer';
 
 import appMessages from './i18n';
 import { UserMessagesProvider } from './generic/user-messages';
