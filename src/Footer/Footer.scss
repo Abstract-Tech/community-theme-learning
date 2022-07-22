@@ -66,10 +66,16 @@ div.footer-container {
     width: 200px;
     padding-left: 30px;
   }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+  }
 }
 
-
-.Theme-licensed-under {
+.Theme-licensed-under,
+.edX-Open-edX-and-th {
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
@@ -77,9 +83,10 @@ div.footer-container {
   line-height: normal;
   letter-spacing: normal;
   color: #121212;
+  width: 300px;
 }
 
-.-Name-All-rights {
+.Name-All-rights {
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
