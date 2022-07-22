@@ -36,34 +36,39 @@ div.footer-container {
   flex-wrap: wrap;
 }
 
-.privacy-links > ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  li {
-    padding-right: 15px;
-    margin: 6px 2px 0 1px;
-    margin-left: 15px;
-    list-style-type: none;
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    font-family: "Work Sans", sans-serif;
-    letter-spacing: normal;
-    border-right: 1px solid #121212;
-    &:last-of-type {
-      border: none;
+.privacy-items {
+  padding: 15px;
+  .privacy-links > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    li {
+      padding-right: 15px;
+      margin: 6px 2px 0 1px;
+      margin-left: 15px;
+      list-style-type: none;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      font-family: "Work Sans", sans-serif;
+      letter-spacing: normal;
+      border-right: 1px solid #121212;
+      a {
+        color: #121212;
+      }
+      &:last-of-type {
+        border: none;
+      }
     }
   }
 }
-
 .flex.icons {
   display: flex;
   justify-content: center;
   margin: 15px;
-  @media screen and (max-width:850px){
+  @media screen and (max-width: 850px) {
     justify-content: start;
     margin-left: 0;
   }
