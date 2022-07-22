@@ -4,6 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   padding: 30px;
+  @media screen and (max-width:600px){
+    padding: 10px;
+  }
   li {
     padding-right: 15px;
     list-style-type: none;
