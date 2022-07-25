@@ -111,10 +111,10 @@ const Footer = () => {
                 <a href="/all-rights">All rights reserved</a>
               </li>
               <li>
-                <a href="/privacy">Privacy</a>
+                <a href={`${getConfig().LMS_BASE_URL}/privacy`}>Privacy</a>
               </li>
               <li>
-                <a href="/terms">Terms</a>
+                <a href={`${getConfig().LMS_BASE_URL}/privacy`}>Terms</a>
               </li>
             </ul>
           </div>
