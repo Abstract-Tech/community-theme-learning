@@ -3,18 +3,35 @@ import logo from "../assets/logo.svg";
 import openCraftLogo from "../assets/opencraft-logo.png";
 import openEdxLogo from "../assets/open-edx-logo-tag.png";
 import "./Footer.scss";
+import { getConfig } from "@edx/frontend-platform";
 
 const Footer = () => {
-  const links = ["What we do", "Donate", "Help", "Contact", "Honor code"];
+  const Footerlinks = [
+    { 0: { text: "What we do", href: `${getConfig().LMS_BASE_URL}/about}` } },
+    { 1: { text: "Donate", href: `${getConfig().LMS_BASE_URL}/donate}` } },
+    { 2: { text: "Help", href: `${getConfig().LMS_BASE_URL}/help}` } },
+    {
+      3: {
+        text: "Contact",
+        href: `${getConfig().LMS_BASE_URL}/contact}`,
+      },
+    },
+    {
+      4: {
+        text: "Honor code",
+        href: `${getConfig().LMS_BASE_URL}/tos_and_honor}`,
+      },
+    },
+  ];
 
   return (
     <footer>
       <div className="footer-container">
         <div className="colophon">
           <ul className="nav-colophon">
-            {links?.map((data, index) => (
-              <li key={data}>
-                <a href={"/" + data.toLowerCase()}>{data}</a>
+            {Object.values(Footerlinks).map((data, index) => (
+              <li key={data[index].text}>
+                <a href={"/" + data[index].text}>{data[index].text}</a>
               </li>
             ))}
           </ul>
@@ -82,10 +99,18 @@ const Footer = () => {
           </div>
           <div className="privacy-links">
             <ul class="Name-All-rights">
-              <li><a href="/name">© Name</a></li>
-              <li><a href="/all-rights">All rights reserved</a></li>
-              <li><a href="/privacy">Privacy</a></li>
-              <li><a href="/terms">Terms</a></li>
+              <li>
+                <a href="/name">© Name</a>
+              </li>
+              <li>
+                <a href="/all-rights">All rights reserved</a>
+              </li>
+              <li>
+                <a href="/privacy">Privacy</a>
+              </li>
+              <li>
+                <a href="/terms">Terms</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -94,22 +119,23 @@ const Footer = () => {
       <div className="Line"></div>
       <div className="logos-section">
         <div className="left-section">
-        <div className="partnership-logos">
-          <img alt="abstract-logo" src={logo} />
-          <img alt="opencraft-logo" src={openCraftLogo} />
+          <div className="partnership-logos">
+            <img alt="abstract-logo" src={logo} />
+            <img alt="opencraft-logo" src={openCraftLogo} />
           </div>
           <span class="Theme-licensed-under">
             Theme licensed under the AGPLv3 License.
-            <br/>
-            Copyright {new Date().getFullYear()} by OpenCraft &
-            Abstract Technology
+            <br />
+            Copyright {new Date().getFullYear()} by OpenCraft & Abstract
+            Technology
           </span>
         </div>
         <div className="right-section">
           <img alt="openedx-logo" src={openEdxLogo} />
           <span class="edX-Open-edX-and-th">
             edX, Open edX and their respective logos are registered trademarks
-            of edX Inc. Free online courses at <a href="https://www.edx.org">edX.org</a>
+            of edX Inc. Free online courses at{" "}
+            <a href="https://www.edx.org">edX.org</a>
           </span>
         </div>
       </div>
