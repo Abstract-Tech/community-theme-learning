@@ -25,7 +25,7 @@ const Footer = () => {
       },
       {
         text: "Honor code",
-        href: `${getConfig().LMS_BASE_URL}/tos_and_honor`,
+        href: `${getConfig().LMS_BASE_URL}/honor`,
       },
   ];
 
@@ -114,7 +114,7 @@ const Footer = () => {
                 <a href={`${getConfig().LMS_BASE_URL}/privacy`}>Privacy</a>
               </li>
               <li>
-                <a href={`${getConfig().LMS_BASE_URL}/privacy`}>Terms</a>
+                <a href={`${getConfig().LMS_BASE_URL}/tos`}>Terms</a>
               </li>
             </ul>
           </div>
