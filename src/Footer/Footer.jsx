@@ -7,21 +7,26 @@ import { getConfig } from "@edx/frontend-platform";
 
 const Footer = () => {
   const Footerlinks = [
-    { 0: { text: "What we do", href: `${getConfig().LMS_BASE_URL}/about}` } },
-    { 1: { text: "Donate", href: `${getConfig().LMS_BASE_URL}/donate}` } },
-    { 2: { text: "Help", href: `${getConfig().LMS_BASE_URL}/help}` } },
-    {
-      3: {
+     {
+        text: "What we do",
+        href: `${getConfig().LMS_BASE_URL}/about`,
+      },
+      {
+        text: "Donate",
+        href: `${getConfig().LMS_BASE_URL}/donate`,
+      },
+      {
+        text: "Help",
+        href: `${getConfig().LMS_BASE_URL}/help`,
+      },
+      {
         text: "Contact",
-        href: `${getConfig().LMS_BASE_URL}/contact}`,
+        href: `${getConfig().LMS_BASE_URL}/contact`,
       },
-    },
-    {
-      4: {
+      {
         text: "Honor code",
-        href: `${getConfig().LMS_BASE_URL}/tos_and_honor}`,
+        href: `${getConfig().LMS_BASE_URL}/tos_and_honor`,
       },
-    },
   ];
 
   return (
@@ -29,9 +34,9 @@ const Footer = () => {
       <div className="footer-container">
         <div className="colophon">
           <ul className="nav-colophon">
-            {Object.values(Footerlinks).map((data, index) => (
-              <li key={data[index].text}>
-                <a href={"/" + data[index].text}>{data[index].text}</a>
+            {Footerlinks.map((data, index) => (
+              <li key={data.text}>
+                <a href={data.href}>{data.text}</a>
               </li>
             ))}
           </ul>
