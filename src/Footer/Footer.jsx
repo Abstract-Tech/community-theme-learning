@@ -103,7 +103,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="privacy-links">
-            <ul class="Name-All-rights">
+            <ul className="Name-All-rights">
               <li>
                 <a href="/name">© Name</a>
               </li>
@@ -128,7 +128,7 @@ const Footer = () => {
             <img alt="abstract-logo" src={logo} />
             <img alt="opencraft-logo" src={openCraftLogo} />
           </div>
-          <span class="Theme-licensed-under">
+          <span className="Theme-licensed-under">
             Theme licensed under the AGPLv3 License.
             <br />
             Copyright {new Date().getFullYear()} by OpenCraft & Abstract
@@ -137,7 +137,7 @@ const Footer = () => {
         </div>
         <div className="right-section">
           <img alt="openedx-logo" src={openEdxLogo} />
-          <span class="edX-Open-edX-and-th">
+          <span className="edX-Open-edX-and-th">
             edX, Open edX and their respective logos are registered trademarks
             of edX Inc. Free online courses at{" "}
             <a href="https://www.edx.org">edX.org</a>
