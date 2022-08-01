@@ -1,0 +1,27 @@
+$blue: #0075b4;
+$white: #fff;
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  &:hover {
+    background-color: $white;
+    border-color: $blue;
+    color: $blue;
+  }
+}
+
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.btn-outline-primary:not(.dropdown-toggle) {
+  background-color: $white;
+  border-color: $blue;
+  color: $blue;
+  &:hover {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+}
