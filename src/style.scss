@@ -1,0 +1,55 @@
+$blue: #0075b4;
+$white: #fff;
+$dark-turquoise: #25A78E;
+$turquoise: #4EC6B0;
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  &:hover {
+    background-color: $white;
+    border-color: $blue;
+    color: $blue;
+  }
+}
+
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.btn-outline-primary:not(.dropdown-toggle) {
+    background-color: $white;
+    border-color: $blue;
+    color: $blue;
+    &:hover {
+      background-color: $blue;
+      border-color: $blue;
+      color: $white;
+    }
+}
+
+a.btn-brand {
+    background-color: $turquoise;
+    border-color: $turquoise;
+    color: black;
+}
+
+a.btn-brand:hover{
+    background-color: $dark-turquoise;
+    color: white;
+    border:none;
+}
+
+a.btn-brand:active{
+    background-color: $turquoise;
+    color: black; 
+}
+
+a.btn-brand:not(:disabled):not(.disabled):active{
+    background-color: $turquoise;
+    color: black; 
+}
+
+a.btn-brand:focus::before {
+    border-color: black !important;
+}
