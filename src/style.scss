@@ -13,10 +13,6 @@ $turquoise: #4EC6B0;
   }
 }
 
-.bg-primary {
-  background-color: $blue !important;
-}
-
 .btn-outline-primary:not(.dropdown-toggle) {
     background-color: $white;
     border-color: $blue;
@@ -52,4 +48,21 @@ a.btn-brand:not(:disabled):not(.disabled):active{
 
 a.btn-brand:focus::before {
     border-color: black !important;
+}
+
+div.bg-primary{
+  background-color:$dark-turquoise !important;
+}
+
+a.dropdown-item.active{
+  background-color: $dark-turquoise;
+}
+
+a.dropdown-item:active{
+  background-color: $turquoise; 
+}
+
+nav.nav-underline-tabs .nav-link.active{
+  color: $dark-turquoise;
+  border-bottom-color: $dark-turquoise;
 }
