@@ -50,6 +50,32 @@ a.btn-brand:focus::before {
     border-color: black !important;
 }
 
+.btn-brand {
+  background-color: $turquoise !important;
+  border-color: $turquoise !important;
+  color: black !important;
+}
+
+button.btn-brand:hover{
+  background-color: $dark-turquoise;
+  color: white;
+  border:none;
+}
+
+button.btn-brand:active{
+  background-color: $turquoise;
+  color: black; 
+}
+
+button.btn-brand:not(:disabled):not(.disabled):active{
+  background-color: $turquoise;
+  color: black; 
+}
+
+button.btn-brand:focus::before {
+  border-color: black !important;
+}
+
 div.bg-primary{
   background-color:$dark-turquoise !important;
 }
@@ -65,4 +91,33 @@ a.dropdown-item:active{
 nav.nav-underline-tabs .nav-link.active{
   color: $dark-turquoise;
   border-bottom-color: $dark-turquoise;
+}
+
+.btn.active:after {
+  background: $dark-turquoise !important;
+}
+
+//Checkboxes 
+
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:focus+label,.xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:focus+label,.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input:hover+label,.xmodule_display.xmodule_ProblemBlock div.problem .choicetextgroup input:hover+label {
+  border: 2px solid $dark-turquoise !important;
+}
+
+//button outline primary
+
+button.btn-outline-primary.disabled, button.btn-outline-primary:disabled {
+  color: $turquoise;
+  background-color: transparent;
+}
+
+button.btn-outline-primary:not(.dropdown-toggle) {
+  background-color: #fff;
+  border-color: $dark-turquoise;
+  color: $dark-turquoise;
+}
+
+button.btn-outline-primary:not(.dropdown-toggle):hover {
+  background-color: $dark-turquoise;
+  border-color: $dark-turquoise;
+  color: #fff;
 }
