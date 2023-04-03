@@ -127,3 +127,15 @@ button.btn-icon.btn-icon-primary:focus {
   color: $dark-turquoise;
   box-shadow: inset 0 0 0 2px $dark-turquoise;
 }
+
+a.nav-link:hover{
+  font-weight: 400;
+  color: $dark-turquoise !important;
+  border-bottom-color: $dark-turquoise !important;
+}
+
+a.nav-link:focus{
+  font-weight: 400;
+  color: $dark-turquoise !important;
+  border-bottom-color: $dark-turquoise !important;
+}
