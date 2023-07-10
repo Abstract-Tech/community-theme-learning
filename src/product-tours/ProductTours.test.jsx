@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /**
  * @jest-environment jsdom
  */
@@ -144,31 +145,25 @@ describe('Course Home Tours', () => {
     });
   });
 
-  it.each`
-  errorStatus
-  ${401}
-  ${403}
-  ${404}
-  `('does not render tour components for $errorStatus response', async (errorStatus) => {
-  setTourData({}, errorStatus, false);
+  it.each([401, 403, 404])(
+    'does not render tour components for $errorStatus response',
+    async (errorStatus) => {
+      setTourData({}, errorStatus, false);
 
-  // Verify no launch tour button
-  expect(await screen.queryByRole('button', { name: 'Launch tour' })).not.toBeInTheDocument();
+      // Verify no launch tour button
+      expect(await screen.queryByRole('button', { name: 'Launch tour' })).not.toBeInTheDocument();
 
-  // Verify no Checkpoint or MarketingModal has rendered
-  expect(await screen.queryByRole('dialog')).not.toBeInTheDocument();
-});
-});
-
-function MockUnit({ courseId, id }) { // eslint-disable-line react/prop-types
-  return (
-    <div id="courseware-sequenceNavigation" className="fake-unit">Unit Contents {courseId} {id}</div>
+      // Verify no Checkpoint or MarketingModal has rendered
+      expect(await screen.queryByRole('dialog')).not.toBeInTheDocument();
+    },
   );
-}
+});
 
 jest.mock(
   '../courseware/course/sequence/Unit',
-  () => MockUnit,
+  () => function ({ courseId, id }) {
+    return <div id="courseware-sequenceNavigation" className="fake-unit">Unit Contents {courseId} {id}</div>;
+  },
 );
 
 describe('Courseware Tour', () => {
@@ -238,7 +233,7 @@ describe('Courseware Tour', () => {
     // Wait for the page spinner to be removed, such that we can wait for our main
     // content to load before making any assertions.
     await waitForElementToBeRemoved(screen.getByRole('status'));
-    return container;
+    return Promise.resolve(container);
   }
 
   describe('when receiving successful course data', () => {
@@ -289,27 +284,25 @@ describe('Courseware Tour', () => {
       history.push(`/course/${courseId}/${defaultSequenceBlock.id}/${unitBlocks[0].id}`);
     });
 
-    it.each`
-  showCoursewareTour
-  ${true}
-  ${false}
-`('should load courseware checkpoint correctly if tour enabled is $showCoursewareTour', async (showCoursewareTour) => {
-  axiosMock.onGet(tourDataUrl).reply(200, {
-    course_home_tour_status: 'no-tour',
-    show_courseware_tour: showCoursewareTour,
-  });
+    it.each([true, false])(
+      'should load courseware checkpoint correctly if tour enabled is $showCoursewareTour',
+      async (showCoursewareTour) => {
+        axiosMock.onGet(tourDataUrl).reply(200, {
+          course_home_tour_status: 'no-tour',
+          show_courseware_tour: showCoursewareTour,
+        });
 
-  const container = await loadContainer();
+        const container = await loadContainer();
+        const sequenceNavButtons = container.querySelectorAll('nav.sequence-navigation button');
+        const sequenceNextButton = sequenceNavButtons[4];
+        expect(sequenceNextButton).toHaveTextContent('Next');
+        fireEvent.click(sequenceNextButton);
 
-  const sequenceNavButtons = container.querySelectorAll('nav.sequence-navigation button');
-  const sequenceNextButton = sequenceNavButtons[4];
-  expect(sequenceNextButton).toHaveTextContent('Next');
-  fireEvent.click(sequenceNextButton);
+        expect(global.location.href).toEqual(`http://localhost/course/${courseId}/${defaultSequenceBlock.id}/${unitBlocks[1].id}`);
 
-  expect(global.location.href).toEqual(`http://localhost/course/${courseId}/${defaultSequenceBlock.id}/${unitBlocks[1].id}`);
-
-  const checkpoint = container.querySelectorAll('#pgn__checkpoint');
-  expect(checkpoint).toHaveLength(showCoursewareTour ? 1 : 0);
-});
+        const checkpoint = container.querySelectorAll('#pgn__checkpoint');
+        expect(checkpoint).toHaveLength(showCoursewareTour ? 1 : 0);
+      },
+    );
   });
 });
