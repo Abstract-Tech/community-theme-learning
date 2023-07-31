@@ -121,3 +121,7 @@ button.btn-outline-primary:not(.dropdown-toggle):hover {
   border-color: $dark-turquoise;
   color: #fff;
 }
+
+div.container-xl {
+  flex-direction: inherit !important;
+}
