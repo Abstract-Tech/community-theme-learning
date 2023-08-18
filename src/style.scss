@@ -140,6 +140,8 @@ div.user-dropdown {
   padding-right: 20px;
 }
 
-ul.list-unstyled, ol.treeview-handoutsnav, div.text-break {
+ul.list-unstyled > li > a, 
+ol.treeview-handoutsnav > li > a, 
+div.text-break > a {
   color: #4ec6b0 !important;
 }
