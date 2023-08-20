@@ -142,6 +142,11 @@ div.user-dropdown {
 
 ul.list-unstyled > li > a, 
 ol.treeview-handoutsnav > li > a, 
-div.text-break > a {
+div.text-break > span > a {
   color: #4ec6b0 !important;
 }
+
+section.mb-4 button.btn-link {
+  color: #4ec6b0 !important;
+}
+
