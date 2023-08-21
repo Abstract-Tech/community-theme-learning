@@ -18,6 +18,14 @@ import { setCallToActionToast } from '../course-home/data/slice';
 import LaunchCourseHomeTourButton from '../product-tours/newUserCourseHomeTour/LaunchCourseHomeTourButton';
 
 const TabPage = ({ intl, ...props }) => {
+
+  const link = document.querySelector('ol.treeview-handoutsnav > li > a');
+
+  if (link) {
+      link.style.color = '#4ec6b0';
+  }
+  
+
   const {
     activeTabSlug,
     courseId,

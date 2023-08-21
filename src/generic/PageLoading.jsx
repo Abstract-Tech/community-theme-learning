@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 
 import { Spinner } from '@edx/paragon';
 
-const link = document.querySelector('ol.treeview-handoutsnav > li > a');
-link.style.color = '#4ec6b0';
-
 
 export default class PageLoading extends Component {
   renderSrMessage() {
