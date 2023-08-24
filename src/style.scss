@@ -158,6 +158,12 @@ div.courseHome-dates > a {
   color: #4ec6b0 !important;
 }
 
-div.text-break > span.allign-middle > a {
+span.allign-middle {
+  a {
+    color: #4ec6b0 !important;
+  }
+}
+
+a.small, button.btn-link   {
   color: #4ec6b0 !important;
 }
