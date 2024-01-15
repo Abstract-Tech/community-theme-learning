@@ -437,6 +437,11 @@ a.btn-inverse-outline-primary {
 }
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  color: #FFFFFF !important;
+  text-decoration: none;
+  background-color: #25a78e;
+}
 
 // Import component-specific sass files
 @import "courseware/course/celebration/CelebrationModal.scss";
