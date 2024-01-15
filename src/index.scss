@@ -370,10 +370,73 @@
   }
 }
 
+div.container-xl {
+  flex-direction: inherit !important;
+}
+
+//padding of header
+
+a.logo {
+  padding-left: 20px !important;
+}
+
+div.menu {
+  padding-right: 20px;
+}
+
+div.user-dropdown {
+  padding-right: 20px;
+}
+
+
 .raised-card {
   border: 0 !important;
   box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .2) !important;
 }
+
+a {
+  color: #25a78e;
+}
+
+a[href$="demoPDF.pdf"] {
+  color: #25a78e; /* Change 'red' to whatever style you want */
+  /* Add more styles if needed */
+}
+
+ol.treeview-handoutsnav {
+  li {
+    a {
+      color: #25a78e !important;
+    }
+  }
+}
+
+a.btn-inverse-outline-primary:hover {
+  color: #1e8672 !important;
+}
+
+a.btn-inverse-outline-primary:active {
+  color: #454545 !important;
+}
+
+a.btn-inverse-outline-primary {
+  color: #fff !important;
+}
+
+.handout-iframe {
+  color: #25a78e !important;
+}
+
+@media (max-width: 576px){ .pgn__action-row .btn:not(:last-child) {
+  margin-bottom: 0 !important;
+@media (max-width: 576px) {
+  button.pgn__action-row{
+    margin-bottom: 0 !important;
+  }
+}
+}
+}
+
 
 // Import component-specific sass files
 @import "courseware/course/celebration/CelebrationModal.scss";
