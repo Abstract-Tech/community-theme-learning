@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import { getConfig } from '@edx/frontend-platform';
 
+
 const LmsHtmlFragment = ({
   className,
   html,
@@ -46,7 +47,7 @@ const LmsHtmlFragment = ({
 
   return (
     <iframe
-      className="w-100 border-0"
+      className="w-100 border-0 handout-iframe"
       onLoad={resetIframeHeight}
       ref={iframe}
       referrerPolicy="origin"
