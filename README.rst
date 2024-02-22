@@ -1,6 +1,6 @@
 |codecov| |license|
 
-frontend-app-learning
+frontend-app-learning-themed
 =========================
 
 Introduction
@@ -12,8 +12,8 @@ actual course content, etc).
 
 Please tag **@edx/engage-squad** on any PRs or issues.  Thanks.
 
-.. |codecov| image:: https://codecov.io/gh/edx/frontend-app-learning/branch/master/graph/badge.svg?token=3z7XvuzTq3
-   :target: https://codecov.io/gh/edx/frontend-app-learning
+.. |codecov| image:: https://codecov.io/gh/edx/frontend-app-learning-themed/branch/master/graph/badge.svg?token=3z7XvuzTq3
+   :target: https://codecov.io/gh/edx/frontend-app-learning-themed
 .. |license| image:: https://img.shields.io/badge/license-AGPL-informational
    :target: https://github.com/openedx/frontend-app-account/blob/master/LICENSE
 
